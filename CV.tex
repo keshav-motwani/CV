@@ -1,0 +1,356 @@
+\documentclass[margin,centered]{res}
+%global options Bryan took out:
+%pifont,palatino,courier
+
+\usepackage{pifont}
+\usepackage[latin1] { inputenc}
+
+\topmargin -.5in
+%\oddsidemargin -.5in
+%\evensidemargin -.5in
+%\textwidth=6.0in
+ \textheight=9.0in
+%\itemsep=0in
+%\parsep=0in
+\usepackage{fancyhdr}
+%\topmargin=0in
+%\textheight=8.5in
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+%\cfoot{\thepage}
+%\lfoot{\textit{\footnotesize Research Statement}}
+\rfoot{{\footnotesize Curriculum Vitae, Bryan D. Martin, \thepage}}
+
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+%Bryan Added
+\usepackage[letterspace=50]{microtype}
+\usepackage{pifont}
+\usepackage{color}
+\usepackage{verbatim}
+
+%\usepackage{libertineotf}
+\usepackage{libertine}
+\usepackage{microtype}
+%make my CV machine unicode readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\begin{document}
+
+\name{ Bryan D. Martin}
+\vspace*{.1in}
+
+
+\begin{resume}
+
+\section{\sc Contact Information}
+
+\vspace{.05in}
+\begin{tabular}{@{}p{2.0in}p{2in}}
+Department of Statistics& e:  \verb+bmartin6@uw.edu+ \\
+University of Washington  &w: \verb+bryandmartin.github.io+ 
+\\
+Padelford B-317		                   	   \\
+Seattle, WA, 98195             & \\
+
+
+
+
+
+
+\end{tabular}
+
+\section{\sc Education}
+{\bf University of Washington}, Seattle, Washington
+%\vspace*{-.1in}
+\begin{list1}
+\item[] 
+Ph.D.~Statistics Student
+\begin{list2}
+\vspace*{.05in}
+\item Research interests: Machine learning, high-dimensional inference, stochastic processes, spatial analysis
+\item Coursework: Statistical machine learning, statistical inference, stochastic modeling, cluster analysis, Bayesian statistics, spatial statistics, statistical computing, applied regression
+\end{list2}
+\end{list1}
+
+
+
+{\bf Macalester College}, St. Paul, MN
+%\vspace*{-.1in}
+\begin{list1}
+\item[] B.A.~Honors Applied Mathematics \& Statistics (summa cum laude), May 2015
+\item[] B.A.~Economics (summa cum laude), May 2015
+\begin{list2}
+\vspace*{.05in}
+\item Coursework: Mathematical statistics, econometrics, signal processing, real analysis, Bayesian statistics, probability, numerical analysis
+\end{list2}
+\end{list1}
+
+
+\section{\sc Research\\ Experience}
+
+{\bf University of Washington},  Seattle, Washington
+\begin{list1}
+\item[] 
+Research Assistant, January 2017--Present
+\begin{list2}
+\vspace*{.05in}
+\item Title: Small-Area Estimation of Under-Five Mortality
+\item Use space-time models to combine data from multiple sources to provide reliable estimation of mortality rates using complex survey data
+\item Smooth small-area estimates with Bayesian spatial methods
+%\item Critical examination of the assumptions underlying simulation methods for trajectory models
+\end{list2} 
+\end{list1}
+
+{\bf University of Washington},  Seattle, Washington
+\begin{list1}
+\item[] 
+Research Assistant, January 2016--Present
+\begin{list2}
+\vspace*{.05in}
+\item Title: Trajectory Models Revisited - Assessing Recent Simulation Studies
+\item Propose a new group-based trajectory modeling algorithm: Group-Based Segmented Logistic Mixture Model
+\item Assessed the performance of this model under various simulation conditions
+\item Presented at the 2016 American Society of Criminology Conference 
+%\item Critical examination of the assumptions underlying simulation methods for trajectory models
+\end{list2} 
+\end{list1}
+
+
+
+
+{\bf Macalester College Department of Statistics}, St. Paul, Minnesota
+\begin{list1}
+\item[] 
+Statistics Honors Thesis, August 2014--May 2015
+\begin{list2}
+\vspace*{.05in}
+\item
+Title: Methods for Real-Time Prediction of Mode of Travel Using Smartphone-Based GPS and Accelerometer Data
+\item Recently submitted selected chapters for journal publication
+\item Achieved 96.8\% classification accuracy while reducing the dimensionality of the data by over 90\%
+\item Performed model comparisons of various combinations of dictionary learning, classification algorithms, and dimension reduction algorithms
+%\item Supervisor: Vittorio Addona
+\end{list2} 
+\end{list1}
+
+{\bf Institute for Mathematics and Its Applications}, Minneapolis, Minnesota
+\begin{list1}
+\item[] 
+Research Assistant, May 2014--July 2014
+\begin{list2}
+\vspace*{.05in}
+\item
+ Developed a model to automatically predict mode of transportation using smartphone sensor data
+ \item Manipulated, cleaned, and visualized large time-series data sets in R
+\item Contributed random forest methods of final model to Android smartphone application
+ \item Presented research findings biweekly, created research poster and paper
+%\item Supervisors: Julian Wolfson and Vittorio Addona
+\end{list2} 
+\end{list1}
+
+
+{\bf Center for Khmer Studies}, Siem Reap, Cambodia
+\begin{list1}
+\item[] 
+Undergraduate Research Fellow, June 2013--August 2013
+\begin{list2}
+\vspace*{.05in}
+\item Conducted a statistical analysis of price discrimination in the bargain economy of Cambodian markets
+\item Took coursework in applied social science research methodology
+\item Designed an experiment to test the effects of gender and ethnicity on offered prices
+\item Presented results at the Center for Khmer Studies research symposium
+%\item Supervisor: Alberto P\'erez-Pereiro
+\end{list2} 
+\end{list1}
+
+{\bf MN2020}, St. Paul, Minnesota
+\begin{list1}
+\item[] 
+Education Research Fellow, January 2013--February 2013
+\begin{list2}
+\vspace*{.05in}
+\item Analyzed local, state, and national education policy through the lens of racial and socioeconomic equity
+\item Composed reports evaluating current policy and advocating for policy change
+\item Published policy reports to various social media outlets with over 47,000 subscribers
+\item Gathered and cleaned data for project to evaluate charter school funding and outcomes
+%\item Supervisor: John Van Hecke
+\end{list2}
+\end{list1}
+
+% professional experiences
+\section{\sc Teaching \\ Experience}
+
+{\bf University of Washington}, Seattle, Washington
+\begin{list1}
+\item[] Statistics Tutor, September 2016--Present
+\begin{list2}
+\vspace*{.05in}
+\item Drop-in tutoring provided for students in all undergraduate statistics courses, as well as related courses in other departments
+\end{list2}
+\end{list1}
+
+{\bf University of Washington}, Seattle, Washington
+%\vspace*{-.1in}
+\begin{list1}
+\item[] Teaching Assistant, September 2015--May 2016
+\begin{list2}
+\vspace*{.05in}
+\item Statistics 221: Statistical Concepts \& Methods for the Social Sciences
+%\item Prepare and teach four hours of lecture each week
+%\item Host weekly office hours, focused on providing personalized and constructive feedback
+%\item Assess and grade quizzes and other assignments
+\end{list2}
+\end{list1}
+
+
+{\bf Macalester College}, St. Paul, Minnesota
+%\vspace*{-.1in}
+\begin{list1}
+\item[] Supplemental Instructor, August 2014--December 2014
+\begin{list2}
+\vspace*{.05in}
+\item Economics 361: Intermediate Microeconomic Analysis
+\item Planned and taught an optional supplementary two-hour weekly lecture on Sundays, maintained an average attendance of 60\% of total enrollment
+\item Created practice problems and study exercises for students
+%\item Hosted weekly office hours
+\end{list2}
+\end{list1}
+
+{\bf Macalester College}, St. Paul, Minnesota
+%\vspace*{-.1in}
+\begin{list1}
+\item[] Teaching Assistant, September 2013--May 2014 \& January 2015--May 2015
+\begin{list2}
+\vspace*{.05in}
+\item Mathematics 254: Probability and Mathematical Statistics
+\item Economics 361: Intermediate Microeconomic Analysis
+\item Economics 119: Principles of Economics
+%\item Produced answer keys for weekly assignments
+%\item Hosted biweekly office hours
+%\item Assessed and graded course assignments
+\end{list2}
+\end{list1}
+
+
+%How sad...
+%\section{\sc Publications}
+
+
+\section{\sc Talks and \\ Presentations}
+\emph{Learning Local Dependence in Ordered Data}, presentation and defense for the University of Washington Statistics PhD Oral Preliminary Examination, Seattle, WA (May 2017)
+
+Bryan Martin, Elena Erosheva, \& Ross Matsueda. \emph{A Comparison of Group-Based Trajectory Modeling Techniques}, The American Society of Criminology Annual Meeting, New Orleans, LA. (November 2016)
+
+\emph{Machine Learning Algorithms for Predicting Mode of Transportation Using Smartphone Sensor Data}, Invited Plenary Speaker at Undergraduate Statistics Project Competition (USPROC) E-Conference (October 2015)
+
+\emph{Statistics Honors Thesis Defense}, public presentation and defense at Macalester College, St. Paul, MN (May 2015)
+
+\emph{SmarTrAC: Activity Detection with Smartphone Sensor Data}, Poster Presentation at the Joint Meeting in Mathematics, San Antonio, Texas (January 2015)
+
+\emph{Price Discrimination by Race and Gender in Cambodian Bargain Economies}, Center for Khmer Studies Research Symposium, Siem Reap, Cambodia (August 2013)
+
+
+
+\section{\sc Honours and\\ Awards}
+
+\begin{tabular}{@{}p{0.8in}p{4in}}
+2017 & Center for Statistics and the Social Sciences Grant Recipient\\
+2016--2017 & NSF Graduate Research Fellow\\
+2015 & Third place in national Undergraduate Statistics Research Competition\\
+2015 & Konhauser Achievement Award in Mathematics\\
+2015 & Vasant Sukhatme Academic Excellence Award in Economics \\
+2015 & Phi Beta Kappa\\
+2014 & John M. Dozier Scholarship in Economics \\
+2014 & Omicron Delta Epsilon\\
+2011--2015 & DeWitt Wallace Distinguished Scholarship \\
+2011--2015 & Dean's List (all semesters)\\
+2011--2015 & National Merit Scholarship \\
+2011--2015 & Elks National Foundation Scholarship\\
+2011 & City High School Valedictorian\\
+2011 & National Merit Finalist\\
+2011 & Kiwanis Club Scholarship \\
+2011 & Silver Cord Volunteer Scholarship\\
+2011 & City High Scholarship\\
+%2011 & City High Alumni Scholarship\\
+%2011 & Youth Salute Male Youth Leader of the Year 
+\end{tabular}
+
+
+
+%{\bf ACODO}, Siem Reap, Cambodia
+%\begin{list1}
+%\item[] 
+%\emph{Officially registered orphanage with the Royal Government of Cambodia} \\
+%English Teacher,  May 2012 (1 week)
+%\begin{list2}
+%\item Delivered English instruction to orphans
+%\end{list2} 
+%\end{list1}
+
+
+
+\section{\sc Skills}
+{\bf Advanced:} R, LaTeX\\
+{\bf Intermediate:} C++, Bash, Stata, Excel\\
+{\bf Basic:} Python, MATLAB, Mathematica, Dynare
+
+
+
+\section{\sc Extra-- \\ Cirriculars} 
+
+
+
+
+%{\bf University of Washington}, Seattle, Washington
+%\vspace*{-.1in}
+%\begin{list1}
+%\item[] 
+%\begin{list2}
+%\vspace*{.05in}
+%\item Attendee of two weekly machine learning seminars
+%\end{list2}
+%\end{list1}
+
+
+{\bf Macalester College}, St. Paul, Minnesota
+%\vspace*{-.1in}
+\begin{list1}
+\item[]
+\begin{list2}
+\vspace*{.05in}
+\item Board member of Macalester College Students for Education Reform
+\item Organizer of Students for Economic Justice
+\item Founder and president of Macalester College student slacklining organization
+\end{list2}
+\end{list1}
+
+
+\section{\sc Interests}
+\begin{list1}
+\item[] 
+
+
+
+\begin{list2}
+\item Biking, basketball, hiking, board games, and slacklining
+\end{list2} 
+\end{list1}
+
+
+\end{resume}
+\end{document}
