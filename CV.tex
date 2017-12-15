@@ -49,6 +49,16 @@
 \input{glyphtounicode}
 \pdfgentounicode=1
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=blue,
+}
+ 
+\urlstyle{same}
+
 \begin{document}
 
 \name{ Bryan D. Martin}
@@ -60,9 +70,9 @@
 \section{\sc Contact Information}
 
 \vspace{.05in}
-\begin{tabular}{@{}p{2.0in}p{2.5in}}
-Department of Statistics& e:  \texttt{bmartin6@uw.edu} \\
-University of Washington  &w: \texttt{bryandmartin.github.io}
+\begin{tabular}{@{}p{2.0in}p{2.9in}}
+Department of Statistics& Email:  bmartin6@uw.edu \\
+University of Washington  &Webpage: \href{https://bryandmartin.github.io/}{\texttt{bryandmartin.github.io}}
 \\
 Padelford B-317		                   	   \\
 Seattle, WA, 98195             & \\
@@ -102,17 +112,52 @@ Ph.D.~Statistics Student
 \end{list1}
 
 
+\section{\sc Publications}
+
+\textbf{Martin, B. D.}, Addona, V., Wolfson, J., Adomavicius, G., \& Fan, Y. (2017). Methods for real-time prediction of the mode of travel using smartphone-based GPS and accelerometer data. \textit{Sensors}, 17(9), 2058.
+
+\section{\sc Submitted}
+
+Tromas, N.,  Taranu, Z. E., \textbf{Martin, B. D.}, Willis, A., Greer, C. W., \& Shapiro, B. J. Niche separation increases with genetic distance among bloom-forming cyanobacteria.
+
+Li, Z., Hsiao, Y., Godwin, J., \textbf{Martin, B. D.}, Wakefield, J., Clark, S. J. Changes in the spatial distribution of the under five mortality rate: small-area analysis of 136 DHS Surveys in 33 countries in Africa and Asia.
+
+
+% In progress, probably don't need?
+
+%\section{\sc In Progress}
+
+
+\section{\sc Software} \textbf{Martin, B. D.}, Li, Z. R. (2017). SUMMER: Spatio-Temporal Under-Five Mortality Methods for Estimation. \texttt{R} package.\\
+\textbf{Availability:} \href{https://CRAN.R-project.org/package=SUMMER}{CRAN} and \href{https://github.com/bryandmartin/SUMMER}{Github}
+
+
 \section{\sc Research\\ Experience}
+{\bf University of Washington},  Seattle, Washington
+\begin{list1}
+\item[] 
+Research Assistant, May 2017--Present
+\begin{list2}
+\vspace*{.05in}
+\item Advisors: Daniela Witten and Amy Willis
+\item Model development and statistical inference for compositional data applied to the microbiome
+\item Manuscript in progress
+%\item Smooth small-area estimates with Bayesian spatial methods
+%\item Critical examination of the assumptions underlying simulation methods for trajectory models
+\end{list2} 
+\end{list1}
+
 
 {\bf University of Washington},  Seattle, Washington
 \begin{list1}
 \item[] 
-Research Assistant, January 2017--Present
+Research Assistant, January 2017--May 2017
 \begin{list2}
 \vspace*{.05in}
-\item Title: Small-Area Estimation of Under-Five Mortality
-\item Use space-time models to combine data from multiple sources to provide reliable estimation of mortality rates using complex survey data
-\item Smooth small-area estimates with Bayesian spatial methods
+\item Advisor: Jon Wakefield
+\item Used space-time models to combine data from multiple sources to provide reliable estimation of mortality rates using complex survey data
+\item Manuscript in progress
+%\item Smooth small-area estimates with Bayesian spatial methods
 %\item Critical examination of the assumptions underlying simulation methods for trajectory models
 \end{list2} 
 \end{list1}
@@ -120,13 +165,14 @@ Research Assistant, January 2017--Present
 {\bf University of Washington},  Seattle, Washington
 \begin{list1}
 \item[] 
-Research Assistant, January 2016--Present
+Research Assistant, January 2016--January 2017
 \begin{list2}
 \vspace*{.05in}
-\item Title: Trajectory Models Revisited - Assessing Recent Simulation Studies
-\item Propose a new group-based trajectory modeling algorithm: Group-Based Segmented Logistic Mixture Model
-\item Assessed the performance of this model under various simulation conditions
-\item Presented at the 2016 American Society of Criminology Conference 
+\item Advisor: Elena Erosheva
+\item Developed a new unimodal mixed membership trajectory modeling algorithm
+%\item Assessed the performance of this model under various simulation conditions
+\item Presented at the 2017 Joint Statistical Meetings and 2016 American Society of Criminology Conference
+\item Manuscript in progress
 %\item Critical examination of the assumptions underlying simulation methods for trajectory models
 \end{list2} 
 \end{list1}
@@ -137,18 +183,21 @@ Research Assistant, January 2016--Present
 {\bf Macalester College Department of Statistics}, St. Paul, Minnesota
 \begin{list1}
 \item[] 
-Statistics Honors Thesis, August 2014--May 2015
+Statistics Honors Thesis, May 2014--May 2015
 \begin{list2}
 \vspace*{.05in}
 \item
-Title: Methods for Real-Time Prediction of Mode of Travel Using Smartphone-Based GPS and Accelerometer Data
-\item Recently submitted selected chapters for journal publication
-\item Achieved 96.8\% classification accuracy while reducing the dimensionality of the data by over 90\%
-\item Performed model comparisons of various combinations of dictionary learning, classification algorithms, and dimension reduction algorithms
+Advisor: Vittorio Addona
+\item Compared classification accuracy of various combinations of dictionary learning, classification algorithms, and dimension reduction algorithms 
+\item Accepted for publication
 %\item Supervisor: Vittorio Addona
 \end{list2} 
 \end{list1}
 
+
+% Commented out: MAXIMA IMA (but dates added to thesis)
+% Also CKS, MN2020
+\begin{comment}
 {\bf Institute for Mathematics and Its Applications}, Minneapolis, Minnesota
 \begin{list1}
 \item[] 
@@ -192,6 +241,7 @@ Education Research Fellow, January 2013--February 2013
 %\item Supervisor: John Van Hecke
 \end{list2}
 \end{list1}
+\end{comment}
 
 % professional experiences
 \section{\sc Teaching \\ Experience}
@@ -251,20 +301,24 @@ Education Research Fellow, January 2013--February 2013
 %How sad...
 %\section{\sc Publications}
 
-
-\section{\sc Talks and \\ Presentations}
+\section{\sc Conference Proceedings}
 \emph{Trajectory Models Revisited}, Elena Erosheva, Bryan D Martin, \& Ross L Matsueda. Joint Statistical Meetings, Baltimore, MD (July 2017)
-
-
-\emph{Learning Local Dependence in Ordered Data}, presentation and defense for the University of Washington Statistics PhD Oral Preliminary Examination, Seattle, WA (May 2017)
 
 \emph{A Comparison of Group-Based Trajectory Modeling Techniques}, Bryan D Martin, Elena Erosheva, \& Ross L Matsueda. The American Society of Criminology Annual Meeting, New Orleans, LA (November 2016)
 
 \emph{Machine Learning Algorithms for Predicting Mode of Transportation Using Smartphone Sensor Data}, Invited Plenary Speaker at Undergraduate Statistics Project Competition (USPROC) E-Conference (October 2015)
 
+\emph{SmarTrAC: Activity Detection with Smartphone Sensor Data}, Poster Presentation at the Joint Meeting in Mathematics, San Antonio, Texas (January 2015)
+
+
+\section{\sc Other Talks and \\ Presentations}
+
+
+\emph{Learning Local Dependence in Ordered Data}, presentation and defense for the University of Washington Statistics PhD Oral Preliminary Examination, Seattle, WA (May 2017)
+
 \emph{Statistics Honors Thesis Defense}, public presentation and defense at Macalester College, St. Paul, MN (May 2015)
 
-\emph{SmarTrAC: Activity Detection with Smartphone Sensor Data}, Poster Presentation at the Joint Meeting in Mathematics, San Antonio, Texas (January 2015)
+
 
 \emph{Price Discrimination by Race and Gender in Cambodian Bargain Economies}, Center for Khmer Studies Research Symposium, Siem Reap, Cambodia (August 2013)
 
@@ -304,7 +358,26 @@ Education Research Fellow, January 2013--February 2013
 {\bf Basic:} Python, MATLAB, Mathematica, HTML
 
 
+\section{\sc Relevant \\ Activities}
 
+
+\begin{list1}
+\item[]
+\begin{list2}
+\vspace*{.05in}
+\item UW Statistics Department Website Committee Member (2017--Present)
+\item UW Statistics Department PhD student peer mentor (2017--present)
+\item UW Statistical Learning Applied to Biostatistics Lab member (2017--present)
+\item Macalester College Students for Education Reform Board Member (2013--2015)
+\item Macalester College Students for Economic Justice Organizer (2014)
+\item Macalester College slacklining organization founder and president (2014--2015)
+\end{list2}
+\end{list1}
+
+
+
+
+\begin{comment}
 \section{\sc Extra-- \\ Cirriculars} 
 
 
@@ -332,7 +405,7 @@ Education Research Fellow, January 2013--February 2013
 \item Founder and president of Macalester College student slacklining organization
 \end{list2}
 \end{list1}
-
+\end{comment}
 
 % Interests section currently commented out
 \begin{comment}
