@@ -808,3 +808,6 @@
 
 \let\section\@@section
 
+
+\RequirePackage{natbib}
+\RequirePackage[american]{babel}
