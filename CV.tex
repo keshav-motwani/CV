@@ -1,10 +1,12 @@
+% Bryan added: This line tells custom doc class to find bib
+\let\nofiles\relax
 \documentclass[margin,centered]{res}
+%\documentclass{article}
 %global options Bryan took out:
 %pifont,palatino,courier
 
-
 \usepackage{pifont}
-\usepackage[latin1] { inputenc}
+\usepackage[latin1] {inputenc}
 
 \topmargin -.5in
 %\oddsidemargin -.5in
@@ -52,7 +54,7 @@
 
 %\usepackage{libertineotf}
 \usepackage{libertine}
-\usepackage{microtype}
+%\usepackage{microtype}
 %make my CV machine unicode readable
 \input{glyphtounicode}
 \pdfgentounicode=1
@@ -62,10 +64,23 @@
     colorlinks=true,
     linkcolor=black,
     filecolor=black,      
-    urlcolor=blue,
+    urlcolor=blue
 }
  
 \urlstyle{same}
+\usepackage{imakeidx}
+\usepackage[numbers]{natbib}
+\usepackage{bibentry}
+\usepackage{enumitem}
+\usepackage{url} 
+\usepackage{hyperref}
+
+% Bryan: This chunk bolds my name
+\usepackage{xstring}
+\def\FormatName#1{%
+  \IfSubStr{#1}{105}{[105 others, including \textbf{Bryan D Martin}]}{\IfSubStr{#1}{Bryan}{\textbf{#1}}{#1}}%
+}
+
 
 \begin{document}
 
@@ -121,31 +136,53 @@ Ph.D.~Statistics Student
 
 
 \section{\sc Publications}
+\nobibliography{bib}
+\begin{enumerate}[leftmargin=*]
+\item \bibentry{li2019changes}
+\item \bibentry{tromas}
+\item \bibentry{martin2017methods}
+\end{enumerate}
 
-Tromas, N.,  Taranu, Z. E., \textbf{Martin, B. D.}, Willis, A., Fortin, N., Greer, C. W., \& Shapiro, B. J. (2018). Niche separation increases with genetic distance among bloom-forming cyanobacteria. \textit{Frontiers in Microbiology}, 9, 438.
+\section{\sc Preprints}
 
-\textbf{Martin, B. D.}, Addona, V., Wolfson, J., Adomavicius, G., \& Fan, Y. (2017). Methods for real-time prediction of the mode of travel using smartphone-based GPS and accelerometer data. \textit{Sensors}, 17(9), 2058.
-
-\section{\sc In Preparation}
-
-Willis, A., \textbf{Martin, B. D.} DivNet: Estimating diversity in networked communities. 
-\textit{bioRxiv 305045; doi: https://doi.org/10.1101/305045}.
-
-Li, Z., Hsiao, Y., Godwin, J., \textbf{Martin, B. D.}, Wakefield, J., Clark, S. J. Changes in the spatial distribution of the under five mortality rate: small-area analysis of 136 DHS Surveys in 33 countries in Africa and Asia.
+\begin{enumerate}[leftmargin=*]
+\item \bibentry{qiime2}
+\item \bibentry{divnet}
+\end{enumerate}
 
 
 % In progress, probably don't need?
 %\section{\sc In Progress}
 
+\section{\sc Conference Proceedings}
+\begin{enumerate}[leftmargin=*]
+\item \bibentry{sdss}
+\item \bibentry{jsm2017}
+\item \bibentry{asc2016}
+\item \bibentry{usproc}
+\item \bibentry{jmm2015}
+\end{enumerate}
+
 
 \section{\sc Software} 
-Willis, A., \textbf{Martin, B. D.} DivNet: Estimating diversity in networked communities. R package. \\ 
-\textbf{Availability:} \href{https://github.com/adw96/DivNet}{Github}
+\begin{enumerate}[leftmargin=*]
+\item \bibentry{corncobR}
 
-\textbf{Martin, B. D.}, Li, Z. R., Hsiao, Y., Godwin, J., Wakefield, J., and 
-  Clark, S. J. (2018). SUMMER: Spatio-Temporal Under-Five Mortality Methods for Estimation. R
-  package version 0.2.0. https://CRAN.R-project.org/package=SUMMER. \\
-\textbf{Availability:} \href{https://CRAN.R-project.org/package=SUMMER}{CRAN} and \href{https://github.com/bryandmartin/SUMMER}{Github}
+\textbf{Availability:}
+\href{https://github.com/bryandmartin/corncob}{Github}
+    \item \bibentry{summer}
+    
+    \textbf{Availability:} \href{https://CRAN.R-project.org/package=SUMMER}{CRAN} and \href{https://github.com/bryandmartin/SUMMER}{Github}
+    \item \bibentry{divnetR}
+    
+    \textbf{Availability:} \href{https://github.com/adw96/DivNet}{Github}
+    
+    \item \bibentry{breakaway}
+    
+    \textbf{Availability:}
+    \href{https://github.com/adw96/breakaway}{Github}
+\end{enumerate}
+
 
 
 \section{\sc Research\\ Experience}
@@ -170,7 +207,7 @@ Research Assistant, January 2017--May 2017
 \begin{list2}
 \vspace*{.05in}
 \item Advisor: Jon Wakefield
-\item Space-time modelling for  small-area under-five mortality estimation using complex survey data
+\item Space-time modeling for  small-area under-five mortality estimation using complex survey data
 %\item Smooth small-area estimates with Bayesian spatial methods
 %\item Critical examination of the assumptions underlying simulation methods for trajectory models
 \end{list2} 
@@ -183,7 +220,7 @@ Research Assistant, January 2016--January 2017
 \begin{list2}
 \vspace*{.05in}
 \item Advisor: Elena Erosheva
-\item Unimodal mixed membership trajectory modelling
+\item Unimodal mixed membership trajectory modeling
 %\item Assessed the performance of this model under various simulation conditions
 %\item Presented at the 2017 Joint Statistical Meetings and 2016 American Society of Criminology Conference
 %\item Critical examination of the assumptions underlying simulation methods for trajectory models
@@ -258,6 +295,15 @@ Education Research Fellow, January 2013--February 2013
 % professional experiences
 \section{\sc Teaching \\ Experience}
 
+{\bf Marine Biological Laboratory}, Woods Hole, MA
+\begin{list1}
+\item[] Research Facilitator, July 2018--August 2018
+\begin{list2}
+\vspace*{.05in}
+\item Strategies and Techniques for Analyzing Microbial Population Structures (STAMPS)
+\end{list2}
+\end{list1}
+
 {\bf University of Washington}, Seattle, Washington
 \begin{list1}
 \item[] Statistics Tutor, September 2015--March 2018
@@ -309,28 +355,22 @@ Education Research Fellow, January 2013--February 2013
 \end{list2}
 \end{list1}
 
-\section{\sc Conference Proceedings}
-Erosheva, E., \textbf{Martin, B. D.}, \& Matsueda, R. L. Trajectory Models Revisited. \textit{Joint Statistical Meetings}, Baltimore, MD (July 2017).
-
-\textbf{Martin, B. D.}, Erosheva, E., \& Matsueda, R. L. A Comparison of Group-Based Trajectory Modeling Techniques. \textit{The American Society of Criminology Annual Meeting}, New Orleans, LA (November 2016).
-
-\textbf{Martin, B. D.} Machine Learning Algorithms for Predicting Mode of Transportation Using Smartphone Sensor Data. \textit{Undergraduate Statistics Project Competition (USPROC) E-Conference} (October 2015). (Invited Plenary Speaker).
-
-\textbf{Martin, B. D.}, Phillips, A., Berlin, H., Kinney, M., Schadler, L. SmarTrAC: Activity Detection with Smartphone Sensor Data. Poster presentation, \textit{Joint Meeting in Mathematics}, San Antonio, TX (January 2015). 
-
-
-\section{\sc Other Talks and \\ Presentations}
-
-
-\textbf{Martin, B. D.} Learning Local Dependence in Ordered Data. \emph{Statistics PhD Oral Preliminary Examination -- Statistical Learning}, presentation and defense, University of Washington, Seattle, WA (May 2017).
-
-\textbf{Martin, B. D.} A Comparison of Machine Learning Algorithms for Mode of Transportation Classification. \emph{Statistics Honors Thesis Defense}, public presentation and defense, Macalester College, St. Paul, MN (May 2015).
-
-\textbf{Martin, B. D.} Price Discrimination by Race and Gender in Cambodian Bargain Economies. \textit{Center for Khmer Studies Research Symposium}, Siem Reap, Cambodia (August 2013).
 
 
 
-\section{\sc Honours and\\ Awards}
+
+%\section{\sc Other Talks and \\ Presentations}
+
+
+%\textbf{Martin, B. D.} Learning Local Dependence in Ordered Data. \emph{Statistics PhD Oral Preliminary Examination -- Statistical Learning}, presentation and defense, University of Washington, Seattle, WA (May 2017).
+
+%\textbf{Martin, B. D.} A Comparison of Machine Learning Algorithms for Mode of Transportation Classification. \emph{Statistics Honors Thesis Defense}, public presentation and defense, Macalester College, St. Paul, MN (May 2015).
+
+%\textbf{Martin, B. D.} Price Discrimination by Race and Gender in Cambodian Bargain Economies. \textit{Center for Khmer Studies Research Symposium}, Siem Reap, Cambodia (August 2013).
+
+
+
+\section{\sc Honors and\\ Awards}
 
 \begin{tabular}{@{}p{0.8in}p{4in}}
 2017 & University of Washington Center for Statistics and the Social Sciences Grant\\
@@ -354,8 +394,8 @@ Erosheva, E., \textbf{Martin, B. D.}, \& Matsueda, R. L. Trajectory Models Revis
 
 \section{\sc Skills}
 {\bf Advanced:} R, LaTeX\\
-{\bf Intermediate:} C++, Bash, Excel\\
-{\bf Basic:} Python, MATLAB, Mathematica, Stata, HTML
+{\bf Intermediate:} C++, Bash\\
+{\bf Basic:} Python, MATLAB, Mathematica, Excel, Stata, HTML
 
 
 \section{\sc Relevant \\ Activities}
@@ -365,7 +405,10 @@ Erosheva, E., \textbf{Martin, B. D.}, \& Matsueda, R. L. Trajectory Models Revis
 \item[]
 \begin{list2}
 \vspace*{.05in}
-\item UW Statistics Department Diversity Committee Member (2017--present)
+\item UW Statistical Diversity Lab member (2018--present)
+\item UW Statistics Department Graduate Student Representative (2018--2019)
+\item UW Statistics Department Admissions Committee member (2018)
+\item UW Statistics Department Diversity Committee member (2017--present)
 \item UW Statistics Department PhD student peer mentor (2017--present)
 \item UW Statistical Learning Applied to Biostatistics Lab member (2017--2018)
 \item UW Statistics Department Website Committee Member (2017)
@@ -376,8 +419,11 @@ Erosheva, E., \textbf{Martin, B. D.}, \& Matsueda, R. L. Trajectory Models Revis
 \end{list1}
 
 
-
+\bibliographystyle{myplain.bst}
+%\bibliography{bib}
 \thispagestyle{lastpage}
 \end{resume}
+
+
 
 \end{document}
