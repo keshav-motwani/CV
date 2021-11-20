@@ -1,0 +1,110 @@
+\begin{thebibliography}{10}
+
+\bibitem{ihantola2020characterization}
+\FormatName{Emmi-Leena Ihantola}, \FormatName{Henna Ilmonen}, \FormatName{Anssi
+  Kailaanmaki}, \FormatName{Marja Rytkonen-Nissinen}, \FormatName{Aurelien
+  Azam}, \FormatName{Bernard Maillere}, \FormatName{Cecilia S~Lindestam
+  Arlehamn}, \FormatName{Alessandro Sette}, \FormatName{Keshav Motwani},
+  \FormatName{Howard~R Seay}, and \FormatName{others}.
+\newblock Characterization of proinsulin {T} cell epitopes restricted by type 1
+  diabetes--associated {HLA} class {II} molecules.
+\newblock {\em The Journal of Immunology}, 204(9):2349--2359, 2020.
+
+\bibitem{kanduri2021profiling}
+\FormatName{Chakravarthi Kanduri}, \FormatName{Milena Pavlovic},
+  \FormatName{Lonneke Scheffer}, \FormatName{Keshav Motwani}, \FormatName{Maria
+  Chernigovskaya}, \FormatName{Victor Greiff}, and \FormatName{Geir~Kjetil
+  Sandve}.
+\newblock Profiling the baseline performance and limits of machine learning
+  models for adaptive immune receptor repertoire classification.
+\newblock {\em bioRxiv, submitted to Bioinformatics}, 2021.
+
+\bibitem{khosravi2019cross}
+\FormatName{Mohsen Khosravi-Maharlooei}, \FormatName{Aleksandar Obradovic},
+  \FormatName{Aditya Misra}, \FormatName{Keshav Motwani}, \FormatName{Markus
+  Holzl}, \FormatName{Howard~R Seay}, \FormatName{Susan DeWolf},
+  \FormatName{Grace Nauman}, \FormatName{Nichole Danzl}, \FormatName{Haowei
+  Li}, and \FormatName{others}.
+\newblock Cross-reactive public {TCR} sequences undergo positive selection in
+  the human thymic repertoire.
+\newblock {\em The Journal of Clinical Investigation}, 129(6):2446--2462, 2019.
+
+\bibitem{scanalysis}
+\FormatName{Keshav Motwani}.
+\newblock {\em scanalysis: Multi-sample visualization and immune repertoire
+  analysis utilities for single-cell data}, 2019.
+\newblock \url{https://github.com/keshav-motwani/scanalysis}.
+
+\bibitem{IBMR}
+\FormatName{Keshav Motwani}.
+\newblock {\em {IBMR}: {R/C}++ package for fitting the integrative binned
+  multinomial regression model}, 2021.
+\newblock \url{https://github.com/keshav-motwani/IBMR}.
+
+\bibitem{MultiLORS}
+\FormatName{Keshav Motwani}.
+\newblock {\em MultiLORS: {R/C}++ package for fitting a multi-dataset version
+  of the LORS model proposed by Yang et al.}, 2021.
+\newblock \url{https://github.com/keshav-motwani/MultiLORS}.
+
+\bibitem{motwani2021binned}
+\FormatName{Keshav Motwani}, \FormatName{Rhonda Bacher}, and
+  \FormatName{Aaron~J Molstad}.
+\newblock Binned multinomial regression with application to integrative cell
+  type annotation.
+\newblock {\em arXiv, submitted to Annals of Applied Statistics}, 2021.
+
+\bibitem{npod2018}
+\FormatName{Keshav Motwani} and \FormatName{Todd~M Brusko}.
+\newblock The {T} cell receptor {CDR3B} contains sequence motifs that predict
+  disease state in n{POD} samples.
+\newblock In {\em Network for Pancreatic Organ Donors with Diabetes (nPOD)
+  Annual Meeting}, Hollywood, FL, February 2018.
+
+\bibitem{airr2019}
+\FormatName{Keshav Motwani}, \FormatName{Milena Pavlovic},
+  \FormatName{Geir~Kjetil Sandve}, \FormatName{Victor Greiff}, and
+  \FormatName{Todd~M Brusko}.
+\newblock T-cell receptor repertoires in peripheral blood encode type 1
+  diabetes status.
+\newblock In {\em Adaptive Immune Receptor Repertoire Community Meeting},
+  Genoa, Italy, May 2019.
+
+\bibitem{hirn2019}
+\FormatName{Keshav Motwani}, \FormatName{Milena Pavlovic},
+  \FormatName{Geir~Kjetil Sandve}, \FormatName{Victor Greiff}, and
+  \FormatName{Todd~M Brusko}.
+\newblock T-cell receptor repertoires in peripheral blood encode type 1
+  diabetes status.
+\newblock In {\em NIH Human Islet Research Network Annual Meeting}, Washington,
+  DC, April 2019.
+
+\bibitem{motwani2020human}
+\FormatName{Keshav Motwani}, \FormatName{Leeana~D Peters}, \FormatName{Willem~H
+  Vliegen}, \FormatName{Ahmed~Gomaa El-Sayed}, \FormatName{Howard~R Seay},
+  \FormatName{M~Cecilia Lopez}, \FormatName{Henry~V Baker},
+  \FormatName{Amanda~L Posgai}, \FormatName{Maigan~A Brusko},
+  \FormatName{Daniel~J Perry}, and \FormatName{others}.
+\newblock Human regulatory {T} cells from umbilical cord blood display
+  increased repertoire diversity and lineage stability relative to adult
+  peripheral blood.
+\newblock {\em Frontiers in Immunology}, 11:611, 2020.
+
+\bibitem{immuneML}
+\FormatName{Milena Pavlovic}, \FormatName{Lonneke Scheffer}, \FormatName{Keshav
+  Motwani}, \FormatName{Victor Greiff}, and \FormatName{Geir~Kjetil Sandve}.
+\newblock {\em immuneML: A platform for machine learning analysis of adaptive
+  immune receptor repertoire data}, 2021.
+\newblock \url{https://github.com/uio-bmi/immuneML}.
+
+\bibitem{pavlovic2021immuneml}
+\FormatName{Milena Pavlovic}, \FormatName{Lonneke Scheffer}, \FormatName{Keshav
+  Motwani}, \FormatName{Chakravarthi Kanduri}, \FormatName{Radmila Kompova},
+  \FormatName{Nikolay Vazov}, \FormatName{Knut Waagan}, \FormatName{Fabian~LM
+  Bernal}, \FormatName{Alexandre~Almeida Costa}, \FormatName{Brian Corrie}, and
+  \FormatName{others}.
+\newblock immune{ML}: an ecosystem for machine learning analysis of adaptive
+  immune receptor repertoires.
+\newblock {\em Nature Machine Intelligence}, 2021.
+
+\end{thebibliography}

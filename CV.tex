@@ -5,7 +5,6 @@
 %global options Bryan took out:
 %pifont,palatino,courier
 
-\usepackage{pifont}
 \usepackage[latin1] {inputenc}
 
 \topmargin -.5in
@@ -23,14 +22,14 @@
 \fancyhf{}
 %\cfoot{\thepage}
 %\lfoot{\textit{\footnotesize Research Statement}}
-\rfoot{{\footnotesize Curriculum Vitae, Bryan D. Martin, \thepage}}
+\rfoot{{\footnotesize Curriculum Vitae, Keshav Motwani, \thepage}}
 
 
 \fancypagestyle{lastpage}{
 \fancyhf{}
 \lfoot{{\footnotesize Last updated: \today}}
 %\lfoot{\textit{\footnotesize Research Statement}}
-\rfoot{{\footnotesize Curriculum Vitae, Bryan D. Martin, \thepage}}}
+\rfoot{{\footnotesize Curriculum Vitae, Keshav Motwani, \thepage}}}
 
 
 \newenvironment{list1}{
@@ -48,12 +47,10 @@
 
 %Bryan Added
 \usepackage[letterspace=50]{microtype}
-\usepackage{pifont}
 \usepackage{color}
 \usepackage{verbatim}
 
 %\usepackage{libertineotf}
-\usepackage{libertine}
 %\usepackage{microtype}
 %make my CV machine unicode readable
 \input{glyphtounicode}
@@ -74,187 +71,177 @@
 \usepackage{enumitem}
 \usepackage{url} 
 \usepackage{hyperref}
+\usepackage{datetime}
+\newdateformat{monthyeardate}{%
+\monthname[\THEMONTH], \THEYEAR}
 
 % Bryan: This chunk bolds my name
 \usepackage{xstring}
 \def\FormatName#1{%
-  \IfSubStr{#1}{105}{[105 others, including \textbf{Bryan D Martin}]}{\IfSubStr{#1}{Bryan}{\textbf{#1}}{#1}}%
+  \IfSubStr{#1}{105}{[105 others, including \textbf{Keshav Motwani}]}{\IfSubStr{#1}{Keshav}{\textbf{#1}}{#1}}%
 }
 
 
 \begin{document}
 
-\name{ Bryan D. Martin}
-\vspace*{.1in}
+\noindent  \hspace{-97pt} {\LARGE{\bfseries Keshav Motwani}} \hspace*{\fill}  {\small Last updated \monthyeardate\today }\\
 
-
-\begin{resume}
-
-\section{\sc Contact Information}
-
-\vspace{.05in}
-\begin{tabular}{@{}p{2.0in}p{2.9in}}
-Department of Statistics& Email:  bmartin6@uw.edu \\
-University of Washington  &Webpage: \href{https://bryandmartin.github.io/}{\texttt{bryandmartin.github.io}}
-\\
-Padelford B-317		                   	   \\
-Seattle, WA, 98195             & \\
-
-
-
-
-
-
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+% Your email address, website, and Skype name are links to send email, open your website and add you on Skype. 
+\vspace{-12pt}
+\hspace{-95pt} \begin{tabular}{@{}p{3.4in}p{2.9in}}
+%\textbf{Assistant Professor} &  \\%\hspace{1in} Birthplace: St. Paul, MN (U.S. Citizen) \\
+Departments of Statistics and Mathematics   & \hfill Email: keshavmot2@gmail.com\\
+College of Liberal Arts and Sciences  & \hfill   Web: \href{https://keshav-motwani.github.io}{keshav-motwani.github.io}\\
+University of Florida & \hfill  GitHub: \href{https://github.com/keshav-motwani/}{keshav-motwani}\\
 \end{tabular}
 
+\vspace{-5pt}
+
+\begin{resume}
+% \name{Keshav Motwani}
+% \vspace*{.1in}
+
+
+
+% \section{\sc Contact Information}
+
+% \vspace{.05in}
+% \begin{tabular}{@{}p{2.6in}p{2.9in}}
+% Departments of Statistics and Mathematics& Email:  keshavmot2@gmail.com \\
+% University of Florida  &Webpage: \href{https://keshav-motwani.github.io/}{\texttt{keshav-motwani.github.io}}
+% % \\
+% % Padelford B-317		                   	   \\
+% % Seattle, WA, 98195             & \\
+
+
+
+
+
+
+% \end{tabular}
+
 \section{\sc Education}
-{\bf University of Washington}, Seattle, Washington
+% {\bf University of Washington}, Seattle, Washington
+% %\vspace*{-.1in}
+% \begin{list1}
+% \item[] 
+% Ph.D.~Statistics Candidate
+% \begin{list2}
+% \vspace*{.05in}
+% \item Research topic: Statistical models for microbiome data
+% \item Advisors: Daniela Witten and Amy Willis
+% \item Coursework: Applied regression analysis, Bayesian statistics, cluster analysis, convex optimization, data ethics, spatial statistics, statistical computing, statistical inference, statistical machine learning, stochastic modeling
+% \end{list2}
+% \end{list1}
+
+
+
+{\bf University of Florida}, Gainesville, Florida
 %\vspace*{-.1in}
+\begin{list1}
+\item[] B.S.~ Statistics (\textit{summa cum laude}), December 2021
+\item[] B.S.~ Mathematics (\textit{cum laude}), December 2021
+\end{list1}
+
+
+\section{\sc Research\\ Experience}
+{\bf University of Florida},  Gainesville, Florida
 \begin{list1}
 \item[] 
-Ph.D.~Statistics Candidate
+Research Assistant, March 2020 -- Present
 \begin{list2}
-\vspace*{.05in}
-\item Research topic: Statistical models for microbiome data
-\item Advisors: Daniela Witten and Amy Willis
-\item Coursework: Applied regression analysis, Bayesian statistics, cluster analysis, convex optimization, data ethics, spatial statistics, statistical computing, statistical inference, statistical machine learning, stochastic modeling
-\end{list2}
+% \vspace*{.05in}
+\item Advisors: Aaron J. Molstad and Rhonda Bacher
+\item High-dimensional integrative multinomial regression with response categories measured at different resolutions across datasets
+\item Application to cell type prediction for single-cell gene expression data
+%\item Smooth small-area estimates with Bayesian spatial methods
+%\item Critical examination of the assumptions underlying simulation methods for trajectory models
+\end{list2} 
 \end{list1}
-
-
-
-{\bf Macalester College}, St. Paul, Minnesota
-%\vspace*{-.1in}
+\vspace*{-.1in}
+{\bf University of Oslo}, Oslo, Norway
 \begin{list1}
-\item[] B.A.~Honors Applied Mathematics \& Statistics (summa cum laude), May 2015
-\item[] B.A.~Economics (summa cum laude), May 2015
+\item[] 
+Research Intern, May 2019 -- July 2019
+\begin{list2}
+% \vspace*{.05in}
+\item Advisors: Victor Greiff and Geir Kjetil Sandve
+\item Software development for immune receptor sequencing data analysis and machine learning
+%\item Smooth small-area estimates with Bayesian spatial methods
+%\item Critical examination of the assumptions underlying simulation methods for trajectory models
+\end{list2} 
+\end{list1}
+\vspace*{-.1in}
+{\bf University of Florida},  Gainesville, Florida
+\begin{list1}
+\item[] 
+Research Assistant, March 2017 -- March 2020
+\begin{list2}
+% \vspace*{.05in}
+\item Advisor: Todd M. Brusko
+\item Analysis of immune receptor sequencing and single-cell gene expression data in the context of type 1 diabetes immunology
+%\item Smooth small-area estimates with Bayesian spatial methods
+%\item Critical examination of the assumptions underlying simulation methods for trajectory models
+\end{list2} 
+\end{list1}
+
+\section{\sc Work\\ Experience}
+{\bf 10x Genomics},  Pleasanton, California
+\begin{list1}
+\item[] 
+Software Product Manager -- Bioinformatics, August 2021 -- Present
 \end{list1}
 
 
-\section{\sc Publications}
-\nobibliography{bib}
-\begin{enumerate}[leftmargin=*]
-\item \bibentry{corncob}
-\item \bibentry{divnet}
-\item \bibentry{cystic}
-\item \bibentry{qiime2}
-\item \bibentry{li2019changes}
-\item \bibentry{tromas}
-\item \bibentry{martin2017methods}
-\end{enumerate}
 
 \section{\sc Submitted Manuscripts \& Preprints}
 
+\nobibliography{bib}
+
 \begin{enumerate}[leftmargin=*]
-\item \bibentry{summerarxiv}
+\item \bibentry{motwani2021binned}
+\item \bibentry{kanduri2021profiling}
 \end{enumerate}
+
+\section{\sc Publications}
+\begin{enumerate}[leftmargin=*]
+\item \bibentry{pavlovic2021immuneml}
+\item \bibentry{motwani2020human}
+\item \bibentry{ihantola2020characterization}
+\item \bibentry{khosravi2019cross}
+\end{enumerate}
+
 
 
 % In progress, probably don't need?
 %\section{\sc In Progress}
 
-\section{\sc Invited \\ Conference Presentations}
-\begin{enumerate}[leftmargin=*]
-\item \bibentry{jsm2021}
-\item \bibentry{sacmda4}
-\item \bibentry{sdss}
-\item \bibentry{usproc}
-\end{enumerate}
+% \section{\sc Invited \\ Conference Presentations}
+% \begin{enumerate}[leftmargin=*]
+% \item \bibentry{jsm2021}
+% \item \bibentry{sacmda4}
+% \item \bibentry{sdss}
+% \item \bibentry{usproc}
+% \end{enumerate}
 
 \section{\sc Contributed \\ Conference Presentations}
 \begin{enumerate}[leftmargin=*]
-\item \bibentry{uwurs}
-\item \bibentry{jsm2017}
-\item \bibentry{asc2016}
-\item \bibentry{jmm2015}
+\item \bibentry{airr2019}
+\item \bibentry{hirn2019}
+\item \bibentry{npod2018}
 \end{enumerate}
-
 
 
 
 \section{\sc Software} 
 \begin{enumerate}[leftmargin=*]
-\item \bibentry{corncobR}
-
-\textbf{Availability:}
-\href{https://github.com/bryandmartin/corncob}{GitHub}
-
-\item \bibentry{mRkovR}
-
-\textbf{Availability:}
-\href{https://serrat839.shinyapps.io/mRkov_shiny/}{Shiny web app} and \href{https://github.com/serrate839/mRkov}{GitHub}
-
-    \item \bibentry{summer}
-    
-    \textbf{Availability:} \href{https://CRAN.R-project.org/package=SUMMER}{CRAN} and \href{https://github.com/bryandmartin/SUMMER}{GitHub}
-    \item \bibentry{divnetR}
-    
-    \textbf{Availability:} \href{https://github.com/adw96/DivNet}{GitHub}
-    
-    \item \bibentry{breakaway}
-    
-    \textbf{Availability:}
-    \href{https://github.com/adw96/breakaway}{GitHub}
+\item \bibentry{IBMR}
+\item \bibentry{MultiLORS}
+\item \bibentry{immuneML}
+\item \bibentry{scanalysis}
 \end{enumerate}
 
-
-
-\section{\sc Research\\ Experience}
-{\bf University of Washington},  Seattle, Washington
-\begin{list1}
-\item[] 
-Research Assistant, May 2017--Present
-\begin{list2}
-\vspace*{.05in}
-\item Advisors: Daniela Witten and Amy Willis
-\item Model development and statistical inference for compositional data applied to the microbiome
-%\item Smooth small-area estimates with Bayesian spatial methods
-%\item Critical examination of the assumptions underlying simulation methods for trajectory models
-\end{list2} 
-\end{list1}
-
-{\bf University of Washington},  Seattle, Washington
-\begin{list1}
-\item[] 
-Research Assistant, January 2017--May 2017
-\begin{list2}
-\vspace*{.05in}
-\item Advisor: Jon Wakefield
-\item Space-time modeling for  small-area under-five mortality estimation using complex survey data
-%\item Smooth small-area estimates with Bayesian spatial methods
-%\item Critical examination of the assumptions underlying simulation methods for trajectory models
-\end{list2} 
-\end{list1}
-
-{\bf University of Washington},  Seattle, Washington
-\begin{list1}
-\item[] 
-Research Assistant, January 2016--January 2017
-\begin{list2}
-\vspace*{.05in}
-\item Advisor: Elena Erosheva
-\item Unimodal mixed membership trajectory modeling
-%\item Assessed the performance of this model under various simulation conditions
-%\item Presented at the 2017 Joint Statistical Meetings and 2016 American Society of Criminology Conference
-%\item Critical examination of the assumptions underlying simulation methods for trajectory models
-\end{list2} 
-\end{list1}
-
-
-
-
-{\bf Macalester College Department of Statistics}, St. Paul, Minnesota
-\begin{list1}
-\item[] 
-Statistics Honors Thesis, May 2014--May 2015
-\begin{list2}
-\vspace*{.05in}
-\item
-Advisor: Vittorio Addona
-\item Classification method for mode of transportation data using combinations of dictionary learning, classification algorithms, and dimension reduction techniques
-%\item Supervisor: Vittorio Addona
-\end{list2} 
-\end{list1}
 
 
 % Commented out: MAXIMA IMA (but dates added to thesis)
@@ -306,135 +293,133 @@ Education Research Fellow, January 2013--February 2013
 \end{comment}
 
 % professional experiences
-\section{\sc Teaching \\ Experience}
+% \section{\sc Teaching \\ Experience}
 
-{\bf University of Washington}, Seattle, WA
-\begin{list1}
-\item[] \textbf{Instructor of Record}, Winter 2020, Fall 2020, Winter 2021, Spring 2021
-\begin{list2}
-\vspace*{.05in}
-\item Statistics 302: Statistical Computing
-\item Designed and implemented curriculum, course materials, and course webpage
-\item Adjusted combined median teaching evaluation rating: 4.7/5
-\item Topics: Programming fundamentals, data visualization, data manipulation, hypothesis testing, statistical models, debugging, version control, statistical prediction
-\item Course webpage: \href{https://bryandmartin.github.io/STAT302}{Link}
-\item Remote in Fall 2020
-\end{list2}
-\end{list1}
+% {\bf University of Washington}, Seattle, WA
+% \begin{list1}
+% \item[] \textbf{Instructor of Record}, Winter 2020, Fall 2020, Winter 2021, Spring 2021
+% \begin{list2}
+% \vspace*{.05in}
+% \item Statistics 302: Statistical Computing
+% \item Designed and implemented curriculum, course materials, and course webpage
+% \item Adjusted combined median teaching evaluation rating: 4.7/5
+% \item Topics: Programming fundamentals, data visualization, data manipulation, hypothesis testing, statistical models, debugging, version control, statistical prediction
+% \item Course webpage: \href{https://bryandmartin.github.io/STAT302}{Link}
+% \item Remote in Fall 2020
+% \end{list2}
+% \end{list1}
 
-{\bf University of Washington}, Seattle, WA
-\begin{list1}
-\item[] \textbf{Instructor of Record}, Summer 2020
-\begin{list2}
-\vspace*{.05in}
-\item Statistics 311: Elements of Statistical Methods
-\item \raisebox{.1em}{$\scriptstyle\mathtt{\sim}$}180 students, remote due to COVID-19
-\item Managed team of 3 TAs and 2 graders
-\item Adjusted combined median teaching evaluation rating: 4.7/5
-\item Topics: data fundamentals, programming fundamentals, probability, foundations for statistical inference, hypothesis testing
-\end{list2}
-\end{list1}
-
-
-
-{\bf Marine Biological Laboratory}, Woods Hole, MA
-\begin{list1}
-\item[] Research Facilitator, July--August (2018, 2019)
-\begin{list2}
-\vspace*{.05in}
-\item Strategies and Techniques for Analyzing Microbial Population Structures (STAMPS)
-\item Teach coding, data analysis methodologies, and statistical thinking to established investigators, postdoctoral fellows and advanced graduate students from biological fields
-\end{list2}
-\end{list1}
-
-\newpage
-
-{\bf University of Washington}, Seattle, Washington
-\begin{list1}
-\item[] Statistics Tutor, September 2015--March 2018
-\begin{list2}
-\vspace*{.05in}
-\item Drop-in tutoring provided for students in all undergraduate statistics courses
-\end{list2}
-\end{list1}
-
-{\bf University of Washington}, Seattle, Washington
-%\vspace*{-.1in}
-\begin{list1}
-\item[] Teaching Assistant, September 2015--May 2016
-\begin{list2}
-\vspace*{.05in}
-\item Statistics 221: Statistical Concepts \& Methods for the Social Sciences
-%\item Prepare and teach four hours of lecture each week
-%\item Host weekly office hours, focused on providing personalized and constructive feedback
-%\item Assess and grade quizzes and other assignments
-\end{list2}
-\end{list1}
-
-{\bf Macalester College}, St. Paul, Minnesota
-%\vspace*{-.1in}
-\begin{list1}
-\item[] Supplemental Instructor, August 2014--December 2014
-\begin{list2}
-\vspace*{.05in}
-\item Economics 361: Intermediate Microeconomic Analysis
-\item Planned and taught an optional supplementary two-hour weekly lecture on Sundays, maintained an average attendance of 60\% of total enrollment
-\item Created practice problems and study exercises for students
-%\item Hosted weekly office hours
-\end{list2}
-\end{list1}
+% {\bf University of Washington}, Seattle, WA
+% \begin{list1}
+% \item[] \textbf{Instructor of Record}, Summer 2020
+% \begin{list2}
+% \vspace*{.05in}
+% \item Statistics 311: Elements of Statistical Methods
+% \item \raisebox{.1em}{$\scriptstyle\mathtt{\sim}$}180 students, remote due to COVID-19
+% \item Managed team of 3 TAs and 2 graders
+% \item Adjusted combined median teaching evaluation rating: 4.7/5
+% \item Topics: data fundamentals, programming fundamentals, probability, foundations for statistical inference, hypothesis testing
+% \end{list2}
+% \end{list1}
 
 
 
-{\bf Macalester College}, St. Paul, Minnesota
-%\vspace*{-.1in}
-\begin{list1}
-\item[] Undergraduate Teaching Assistant, September 2013--May 2014 \& January 2015--May 2015
-\begin{list2}
-\vspace*{.05in}
-\item Mathematics 254: Probability and Mathematical Statistics
-\item Economics 361: Intermediate Microeconomic Analysis
-\item Economics 119: Principles of Economics
-%\item Produced answer keys for weekly assignments
-%\item Hosted biweekly office hours
-%\item Assessed and graded course assignments
-\end{list2}
-\end{list1}
+% {\bf Marine Biological Laboratory}, Woods Hole, MA
+% \begin{list1}
+% \item[] Research Facilitator, July--August (2018, 2019)
+% \begin{list2}
+% \vspace*{.05in}
+% \item Strategies and Techniques for Analyzing Microbial Population Structures (STAMPS)
+% \item Teach coding, data analysis methodologies, and statistical thinking to established investigators, postdoctoral fellows and advanced graduate students from biological fields
+% \end{list2}
+% \end{list1}
+
+% {\bf University of Washington}, Seattle, Washington
+% \begin{list1}
+% \item[] Statistics Tutor, September 2015--March 2018
+% \begin{list2}
+% \vspace*{.05in}
+% \item Drop-in tutoring provided for students in all undergraduate statistics courses
+% \end{list2}
+% \end{list1}
+
+% {\bf University of Washington}, Seattle, Washington
+% %\vspace*{-.1in}
+% \begin{list1}
+% \item[] Teaching Assistant, September 2015--May 2016
+% \begin{list2}
+% \vspace*{.05in}
+% \item Statistics 221: Statistical Concepts \& Methods for the Social Sciences
+% %\item Prepare and teach four hours of lecture each week
+% %\item Host weekly office hours, focused on providing personalized and constructive feedback
+% %\item Assess and grade quizzes and other assignments
+% \end{list2}
+% \end{list1}
+
+% {\bf Macalester College}, St. Paul, Minnesota
+% %\vspace*{-.1in}
+% \begin{list1}
+% \item[] Supplemental Instructor, August 2014--December 2014
+% \begin{list2}
+% \vspace*{.05in}
+% \item Economics 361: Intermediate Microeconomic Analysis
+% \item Planned and taught an optional supplementary two-hour weekly lecture on Sundays, maintained an average attendance of 60\% of total enrollment
+% \item Created practice problems and study exercises for students
+% %\item Hosted weekly office hours
+% \end{list2}
+% \end{list1}
 
 
-\section{\sc Mentorship}
 
-{\bf University of Washington}, Seattle, Washington
-\begin{list1}
-\item[] Statistics Undergraduate Directed Reading Program, October 2020--December 2020
-\begin{list2}
-\vspace*{.05in}
-\item Mentee: Jinghua Sun
-\item Project: Ethics in Data Science and Statistics
-\item Directed Reading Program website: \href{https://spa-drp.github.io}{Link}
-\end{list2}
-\end{list1}
+% {\bf Macalester College}, St. Paul, Minnesota
+% %\vspace*{-.1in}
+% \begin{list1}
+% \item[] Undergraduate Teaching Assistant, September 2013--May 2014 \& January 2015--May 2015
+% \begin{list2}
+% \vspace*{.05in}
+% \item Mathematics 254: Probability and Mathematical Statistics
+% \item Economics 361: Intermediate Microeconomic Analysis
+% \item Economics 119: Principles of Economics
+% %\item Produced answer keys for weekly assignments
+% %\item Hosted biweekly office hours
+% %\item Assessed and graded course assignments
+% \end{list2}
+% \end{list1}
 
-{\bf University of Washington}, Seattle, Washington
-\begin{list1}
-\item[] Statistics Undergraduate Directed Reading Program, January 2020--March 2020
-\begin{list2}
-\vspace*{.05in}
-\item Mentee: Thomas Serrano
-\item Project: m{R}kov: a statistical tool to scrape and imitate {T}witter activity
-\item Presented at the UW Undergraduate Research Symposium, May 2020
-\item Shiny web app: \href{https://serrat839.shinyapps.io/mRkov_shiny/}{Link}
-\end{list2}
-\end{list1}
 
-{\bf Electronic Undergraduate Statistics Research Conference (eUSR)}
-\begin{list1}
-\item[] Graduate School Information Session, November 2019
-\begin{list2}
-\vspace*{.05in}
-\item Invited panelist
-\end{list2}
-\end{list1}
+% \section{\sc Mentorship}
+
+% {\bf University of Washington}, Seattle, Washington
+% \begin{list1}
+% \item[] Statistics Undergraduate Directed Reading Program, October 2020--December 2020
+% \begin{list2}
+% \vspace*{.05in}
+% \item Mentee: Jinghua Sun
+% \item Project: Ethics in Data Science and Statistics
+% \item Directed Reading Program website: \href{https://spa-drp.github.io}{Link}
+% \end{list2}
+% \end{list1}
+
+% {\bf University of Washington}, Seattle, Washington
+% \begin{list1}
+% \item[] Statistics Undergraduate Directed Reading Program, January 2020--March 2020
+% \begin{list2}
+% \vspace*{.05in}
+% \item Mentee: Thomas Serrano
+% \item Project: m{R}kov: a statistical tool to scrape and imitate {T}witter activity
+% \item Presented at the UW Undergraduate Research Symposium, May 2020
+% \item Shiny web app: \href{https://serrat839.shinyapps.io/mRkov_shiny/}{Link}
+% \end{list2}
+% \end{list1}
+
+% {\bf Electronic Undergraduate Statistics Research Conference (eUSR)}
+% \begin{list1}
+% \item[] Graduate School Information Session, November 2019
+% \begin{list2}
+% \vspace*{.05in}
+% \item Invited panelist
+% \end{list2}
+% \end{list1}
 
 
 
@@ -451,38 +436,15 @@ Education Research Fellow, January 2013--February 2013
 \section{\sc Honors and\\ Awards}
 
 \begin{tabular}{@{}p{0.8in}p{4in}}
-2020 & Dorothy M. Gilford Excellence in Teaching Award\\
-&\textit{(Department of Statistics, University of Washington)}\\
-2016--Present & NSF Graduate Research Fellow\\
-2017 & University of Washington Center for Statistics and the Social Sciences Grant\\
-2015 & University of Washington Department of Statistics Top Scholar Award\\
-2015 & Third place in national Undergraduate Statistics Research Competition (USRESP)\\
-2015 & Konhauser Achievement Award in Mathematics \\
-&\textit{(Department of Mathematics, Statistics, and Computer Science, Macalester College)}\\
-2015 & Vasant Sukhatme Academic Excellence Award in Economics\\& \textit{(Department of Economics, Macalester College)}\\
-2015 & Phi Beta Kappa \textit{(honors society for the liberal arts)}
+2021 & University Scholars Program (\$1750)\\
+&\textit{(Department of Statistics, University of Florida)}\\
+2020 & \textbf{Goldwater Scholar} (\$15000)\\
+2019 & Summer International Undergraduate Research Program (\$5000) \\
+&\textit{(University of Oslo, Norway)}\\
+2018 & University Scholars Program (\$1750)\\
+&\textit{(College of Medicine, University of Florida)}\\
+2018-2021 & Bright Futures Florida Academic Scholarship (full tuition) \\
 \end{tabular}
-
-
-\begin{tabular}{@{}p{0.8in}p{4in}}
-2014 & John M. Dozier Scholarship in Economics \\ &\textit{(Department of Economics, Macalester College)}\\
-2014 & Omicron Delta Epsilon \textit{(honors society for economics)}\\
-2011--2015 & DeWitt Wallace Distinguished Scholarship \textit{(Macalester College)}\\
-2011--2015 & Macalester College Dean's List (all semesters)\\
-2011--2015 & National Merit Scholarship \\
-2011--2015 & Elks National Foundation Scholarship \textit{(national scholarship)}\\
-\end{tabular}
-
-
-
-
-
-\section{\sc Skills}
-{\bf Advanced:} R, LaTeX\\
-{\bf Intermediate:} Bash\\
-{\bf Basic:} Python, C++, HTML, MATLAB, Mathematica, Excel, Stata
-
-
 
 \section{\sc Service}
 
@@ -490,31 +452,25 @@ Education Research Fellow, January 2013--February 2013
 \item[]
 \begin{list2}
 \vspace*{.05in}
-\item Reviewer for \textit{Molecular Ecology}, \textit{Microbiome}, and \textit{Frontiers in Genetics}
-\item UW Statistics Department Directed Reading Program Organizing Committee (2020--present)
-\item UW Statistics Department Diversity, Inclusion, Community, and Equity Committee (2017--present)
-\item UW Statistics Department PhD student peer mentor (2017--present)
-\item UW Statistics Department Fun Committee co-founder and member (2018--present)
-\item UW Statistics Department Admissions Screening Committee (2018, 2019, 2020)
-\item UW Statistics Department Graduate Student Representative (2018--2019)
-\item UW Statistics Department Website Committee (2017)
+\item UF Undergraduate Scholars Research Program Advisory Committee (2018-2020)
+\item UF American Physician Scientists Association Bioinformatics Director (2018-2020)
 \end{list2}
 \end{list1}
 
-\section{\sc Relevant \\ Activities}
+% \section{\sc Relevant \\ Activities}
 
 
-\begin{list1}
-\item[]
-\begin{list2}
-\vspace*{.05in}
-\item UW Statistical Diversity Lab member (2018--present)
-\item UW Statistical Learning Applied to Biostatistics Lab member (2017--2018)
-\item Macalester College Students for Education Reform Board Member (2013--2015)
-\item Macalester College Students for Economic Justice Organizer (2014)
-\item Macalester College slacklining organization founder and president (2014--2015)
-\end{list2}
-\end{list1}
+% \begin{list1}
+% \item[]
+% \begin{list2}
+% \vspace*{.05in}
+% \item UW Statistical Diversity Lab member (2018--present)
+% \item UW Statistical Learning Applied to Biostatistics Lab member (2017--2018)
+% \item Macalester College Students for Education Reform Board Member (2013--2015)
+% \item Macalester College Students for Economic Justice Organizer (2014)
+% \item Macalester College slacklining organization founder and president (2014--2015)
+% \end{list2}
+% \end{list1}
 
 
 \bibliographystyle{myplain.bst}
