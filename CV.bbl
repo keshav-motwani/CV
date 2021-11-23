@@ -50,8 +50,8 @@
 \bibitem{motwani2021binned}
 \FormatName{Keshav Motwani}, \FormatName{Rhonda Bacher}, and
   \FormatName{Aaron~J Molstad}.
-\newblock Binned multinomial regression with application to integrative cell
-  type annotation.
+\newblock Binned multinomial logistic regression for integrative cell type
+  annotation.
 \newblock {\em arXiv, submitted to Annals of Applied Statistics}, 2021.
 
 \bibitem{npod2018}
