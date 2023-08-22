@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{dharamshi2023}
+\FormatName{Ameer Dharamshi}, \FormatName{Anna Neufeld}, \FormatName{Keshav
+  Motwani}, \FormatName{Lucy~L Gao}, \FormatName{Daniela Witten}, and
+  \FormatName{Jacob Bien}.
+\newblock Generalized data thinning using sufficient statistics.
+\newblock {\em arXiv}, 2023.
+
 \bibitem{ihantola2020characterization}
 \FormatName{Emmi-Leena Ihantola}, \FormatName{Henna Ilmonen}, \FormatName{Anssi
   Kailaanmaki}, \FormatName{Marja Rytkonen-Nissinen}, \FormatName{Aurelien
@@ -10,14 +17,13 @@
   diabetes--associated {HLA} class {II} molecules.
 \newblock {\em The Journal of Immunology}, 204(9):2349--2359, 2020.
 
-\bibitem{kanduri2021profiling}
+\bibitem{kanduri2022profiling}
 \FormatName{Chakravarthi Kanduri}, \FormatName{Milena Pavlovic},
   \FormatName{Lonneke Scheffer}, \FormatName{Keshav Motwani}, \FormatName{Maria
-  Chernigovskaya}, \FormatName{Victor Greiff}, and \FormatName{Geir~Kjetil
-  Sandve}.
+  Chernigovskaya}, \FormatName{Victor Greiff}, and \FormatName{Geir~K Sandve}.
 \newblock Profiling the baseline performance and limits of machine learning
   models for adaptive immune receptor repertoire classification.
-\newblock {\em bioRxiv, submitted to Bioinformatics}, 2021.
+\newblock {\em GigaScience}, 11, 2022.
 
 \bibitem{khosravi2019cross}
 \FormatName{Mohsen Khosravi-Maharlooei}, \FormatName{Aleksandar Obradovic},
@@ -28,6 +34,23 @@
 \newblock Cross-reactive public {TCR} sequences undergo positive selection in
   the human thymic repertoire.
 \newblock {\em The Journal of Clinical Investigation}, 129(6):2446--2462, 2019.
+
+\bibitem{linsley2021autoreactive}
+\FormatName{Peter~S Linsley}, \FormatName{Fariba Barahmand-pour Whitman},
+  \FormatName{Elisa Balmas}, \FormatName{Hannah~A DeBerg},
+  \FormatName{Kaitlin~J Flynn}, \FormatName{Alex~K Hu}, \FormatName{Mario~G
+  Rosasco}, \FormatName{Janice Chen}, \FormatName{Colin ORourke},
+  \FormatName{Elisavet Serti}, \FormatName{Vivian~H Gersuk}, \FormatName{Keshav
+  Motwani}, and \FormatName{others}.
+\newblock Autoreactive t cell receptors with shared germline-like $\alpha$
+  chains in type 1 diabetes.
+\newblock {\em JCI Insight}, 2021.
+
+\bibitem{molstad2022multiresolution}
+\FormatName{Aaron~J Molstad} and \FormatName{Keshav Motwani}.
+\newblock Multiresolution categorical regression for interpretable cell type
+  annotation.
+\newblock {\em arXiv, minor revision at Biometrics}, 2022.
 
 \bibitem{scanalysis}
 \FormatName{Keshav Motwani}.
@@ -52,7 +75,7 @@
   \FormatName{Aaron~J Molstad}.
 \newblock Binned multinomial logistic regression for integrative cell type
   annotation.
-\newblock {\em arXiv, submitted to Annals of Applied Statistics}, 2021.
+\newblock {\em arXiv, minor revision at Annals of Applied Statistics}, 2021.
 
 \bibitem{npod2018}
 \FormatName{Keshav Motwani} and \FormatName{Todd~M Brusko}.
@@ -106,5 +129,15 @@
 \newblock immune{ML}: an ecosystem for machine learning analysis of adaptive
   immune receptor repertoires.
 \newblock {\em Nature Machine Intelligence}, 2021.
+
+\bibitem{shapiro2023human}
+\FormatName{Melanie~R Shapiro}, \FormatName{Xiaoru Dong}, \FormatName{Daniel
+  Perry}, \FormatName{James~M McNichols}, \FormatName{Puchong Thirawatananond},
+  \FormatName{Amanda~L Posgai}, \FormatName{Leeana Peters}, \FormatName{Keshav
+  Motwani}, \FormatName{Richard Musca}, \FormatName{Andrew Muir}, and
+  \FormatName{others}.
+\newblock Human immune phenotyping reveals accelerated aging in type 1
+  diabetes.
+\newblock {\em bioRxiv, submitted to Science Immunology}, 2023.
 
 \end{thebibliography}
