@@ -1,51 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: CV.aux
-Illegal, another \bibdata command---line 40 of file CV.aux
- : \bibdata
- :         {bib}
-I'm skipping whatever remains of this command
 The style file: myplain.bst.bst
 Database file #1: bib.bib
-You've used 17 entries,
+You've used 18 entries,
             2122 wiz_defined-function locations,
-            587 strings with 8520 characters,
-and the built_in function-call counts, 6869 in all, are:
-= -- 570
-> -- 578
+            590 strings with 8671 characters,
+and the built_in function-call counts, 6932 in all, are:
+= -- 580
+> -- 570
 < -- 0
-+ -- 230
-- -- 212
-* -- 769
-:= -- 1228
-add.period$ -- 51
-call.type$ -- 17
++ -- 227
+- -- 208
+* -- 756
+:= -- 1243
+add.period$ -- 54
+call.type$ -- 18
 change.case$ -- 147
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 181
-empty$ -- 350
-format.name$ -- 212
-if$ -- 1261
+cite$ -- 18
+duplicate$ -- 186
+empty$ -- 359
+format.name$ -- 208
+if$ -- 1274
 int.to.chr$ -- 0
-int.to.str$ -- 17
+int.to.str$ -- 18
 missing$ -- 13
-newline$ -- 88
-num.names$ -- 34
-pop$ -- 155
+newline$ -- 93
+num.names$ -- 36
+pop$ -- 152
 preamble$ -- 1
 purify$ -- 134
 quote$ -- 0
-skip$ -- 121
+skip$ -- 131
 stack$ -- 0
-substring$ -- 157
-swap$ -- 21
+substring$ -- 162
+swap$ -- 23
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 68
+type$ -- 72
 warning$ -- 0
-while$ -- 39
-width$ -- 19
-write$ -- 179
-(There was 1 error message)
+while$ -- 41
+width$ -- 20
+write$ -- 188

@@ -1,6 +1,6 @@
 \begin{thebibliography}{10}
 
-\bibitem{dharamshi2023}
+\bibitem{dharamshi2023generalized}
 \FormatName{Ameer Dharamshi}, \FormatName{Anna Neufeld}, \FormatName{Keshav
   Motwani}, \FormatName{Lucy~L Gao}, \FormatName{Daniela Witten}, and
   \FormatName{Jacob Bien}.
@@ -50,7 +50,7 @@
 \FormatName{Aaron~J Molstad} and \FormatName{Keshav Motwani}.
 \newblock Multiresolution categorical regression for interpretable cell type
   annotation.
-\newblock {\em arXiv, minor revision at Biometrics}, 2022.
+\newblock {\em In press at Biometrics}, 2022.
 
 \bibitem{scanalysis}
 \FormatName{Keshav Motwani}.
@@ -70,12 +70,19 @@
   of the LORS model proposed by Yang et al.}, 2021.
 \newblock \url{https://github.com/keshav-motwani/MultiLORS}.
 
+\bibitem{mvREHE}
+\FormatName{Keshav Motwani}.
+\newblock {\em {mvREHE}: {R/C}++ package for estimating covariance components
+  in multivariate mixed models using restricted Haseman-Elston regression},
+  2023.
+\newblock \url{https://github.com/keshav-motwani/mvREHE}.
+
 \bibitem{motwani2021binned}
 \FormatName{Keshav Motwani}, \FormatName{Rhonda Bacher}, and
   \FormatName{Aaron~J Molstad}.
 \newblock Binned multinomial logistic regression for integrative cell type
   annotation.
-\newblock {\em arXiv, minor revision at Annals of Applied Statistics}, 2021.
+\newblock {\em In press at Annals of Applied Statistics}, 2021.
 
 \bibitem{npod2018}
 \FormatName{Keshav Motwani} and \FormatName{Todd~M Brusko}.
@@ -93,15 +100,6 @@
 \newblock In {\em Adaptive Immune Receptor Repertoire Community Meeting},
   Genoa, Italy, May 2019.
 
-\bibitem{hirn2019}
-\FormatName{Keshav Motwani}, \FormatName{Milena Pavlovic},
-  \FormatName{Geir~Kjetil Sandve}, \FormatName{Victor Greiff}, and
-  \FormatName{Todd~M Brusko}.
-\newblock T-cell receptor repertoires in peripheral blood encode type 1
-  diabetes status.
-\newblock In {\em NIH Human Islet Research Network Annual Meeting}, Washington,
-  DC, April 2019.
-
 \bibitem{motwani2020human}
 \FormatName{Keshav Motwani}, \FormatName{Leeana~D Peters}, \FormatName{Willem~H
   Vliegen}, \FormatName{Ahmed~Gomaa El-Sayed}, \FormatName{Howard~R Seay},
@@ -112,6 +110,11 @@
   increased repertoire diversity and lineage stability relative to adult
   peripheral blood.
 \newblock {\em Frontiers in Immunology}, 11:611, 2020.
+
+\bibitem{motwani2023valid}
+\FormatName{Keshav Motwani} and \FormatName{Daniela Witten}.
+\newblock Valid inference after prediction.
+\newblock {\em arXiv}, 2023.
 
 \bibitem{immuneML}
 \FormatName{Milena Pavlovic}, \FormatName{Lonneke Scheffer}, \FormatName{Keshav
@@ -138,6 +141,6 @@
   \FormatName{others}.
 \newblock Human immune phenotyping reveals accelerated aging in type 1
   diabetes.
-\newblock {\em bioRxiv, submitted to Science Immunology}, 2023.
+\newblock {\em JCI Insight}, 2023.
 
 \end{thebibliography}
